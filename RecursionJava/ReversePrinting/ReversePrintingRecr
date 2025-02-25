@@ -1,0 +1,24 @@
+package TEST1;
+
+public class ReverseNumsRecr {
+	public static void reverseNums(int n) {
+		
+		if(n == 0) {
+			System.out.println(n);
+			return;
+			
+		}
+		System.out.println(n);
+		reverseNums(n-1);
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		reverseNums(10);
+		
+	}
+
+}
