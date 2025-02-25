@@ -1,0 +1,25 @@
+package TEST1;
+
+public class MeanOfANumber {
+	
+	public static int MeanOFArray(int[] arr, int len) {
+		int sum = 0;
+		for(int i =0; i< len; i++) {
+			sum = sum + arr[i];
+		}
+		return sum/len;
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {1,2, 3, 4,5, 6, 7};
+		int len = arr.length;
+		
+		int ans = MeanOFArray(arr, len);
+		System.out.println(ans);
+		
+	}
+
+}
