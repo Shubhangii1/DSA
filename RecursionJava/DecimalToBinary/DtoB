@@ -1,0 +1,25 @@
+package TEST1;
+
+public class decimalToBinary {
+	
+	public static String dToB(int n) {
+		
+		StringBuilder str = new StringBuilder();
+		while(n>0) {
+		int bit = n%2;
+		str.append((char)('0' + bit));
+		n = n/2;
+		}
+		str.reverse();
+		return str.toString();
+		
+	}
+	public static void main(String[] args) {
+		int n = 12;
+		System.out.println(dToB(n));
+	}
+
+}
+
+
+//remember the case of base greater than 9 16 base for example
