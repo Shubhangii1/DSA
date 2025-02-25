@@ -1,0 +1,22 @@
+package TEST1;
+
+public class PrintNnumberRecrs {
+	public static void PrintNum(int n) {
+		
+		if(n ==10) {
+			System.out.println(n);
+			return;
+		}
+		System.out.println(n);
+		PrintNum(n+1);
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		int n = 0;
+		PrintNum(n);
+		
+	}
+
+}
