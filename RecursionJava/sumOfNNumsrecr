@@ -1,0 +1,23 @@
+package TEST1;
+
+public class sumOfNNumsrecr {
+	
+	public static int sumOfNums(int n) {
+		if(n<=1) { //or n<=0
+			return n;
+		}
+		 return n + sumOfNums(n-1);
+		 // return (n * (n + 1)) / 2;  // O(1) time complexity
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		int n =5;
+		System.out.println(sumOfNums(n));
+	}
+}
+
+
+//also check how can we call this function directly and we are returning void and printing after the loop itself in case without recursion
